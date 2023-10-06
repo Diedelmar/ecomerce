@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat</title>
+</head>
+<body>
+  <h1>Chat</h1>
+  <div id="chat-container">
+   <?php foreach ($messages as $message) { ?>
+  </div>
+  <form id="chat-form" action="/chat/sendMessage" method="post">
+    <input type="text" id="message-input" name="message">
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
