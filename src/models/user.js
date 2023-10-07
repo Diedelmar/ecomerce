@@ -44,3 +44,4 @@ User.insertMany(usersData)
   .catch((error) => {
     console.error('Error al registrar usuarios:', error);
   });
+  
