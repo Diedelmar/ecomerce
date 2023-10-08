@@ -1,9 +1,9 @@
-const {Router} = require ('express')
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/miBaseDeDatos', { useNewUrlParser: true, useUnifiedTopology: true });
+import { Router } from 'express';
+import { connect, Schema as _Schema, model } from 'mongoose';
+connect('mongodb://localhost:27017/Veronica/test', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
-const Schema = mongoose.Schema;
+const Schema = _Schema;
 
 const userSchema = new Schema({
   username: String,
@@ -12,7 +12,7 @@ const userSchema = new Schema({
 });
 
 
-const User = mongoose.model('User', userSchema);
+const User = model('User', userSchema);
 
 const usersData = [
   {
