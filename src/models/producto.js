@@ -11,7 +11,7 @@ const productoSchema = new Schema({
 
 const Producto = model('Producto', productoSchema);
 
-connect('mongodb://localhost:27017/Veronica/test', { useNewUrlParser: true, useUnifiedTopology: true })
+connect('mongodb+srv://Veronica:3170@cluster0.jn6wv09.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Conexión exitosa a MongoDB');
     
