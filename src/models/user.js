@@ -52,3 +52,4 @@ app.get('/api/users', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor en ejecución en el puerto ${port}`);
 });
+module.exports = {userModel}
